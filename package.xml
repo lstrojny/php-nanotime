@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://pear.php.net/dtd/package-2.0"
+    xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+
+  <name>nanotime</name>
+  <channel>pecl.php.net</channel>
+
+  <summary>PHP bindings for libnanotime for nanosecond precision timestamps</summary>
+
+  <description>PHP bindings for libnanotime for nanosecond precision timestamps</description>
+
+  <lead>
+    <name>Lars Strojny</name>
+    <user>lstrojny</user>
+    <email>lstrojny@php.net</email>
+    <active>yes</active>
+  </lead>
+
+  <date>2013-10-15</date>
+  <version>
+    <release>0.0.1-dev</release>
+    <api>0.0.1-dev</api>
+  </version>
+  <stability>
+    <release>devel</release>
+    <api>devel</api>
+  </stability>
+
+  <license>MIT</license>
+
+  <notes>
+none
+  </notes>
+
+  <contents>
+    <dir name="/">
+      <file role='src' name='LICENSE'/>
+      <file role='src' name='config.m4'/>
+      <file role='src' name='nanotime.c'/>
+      <file role='src' name='php_nanotime.h'/>
+    </dir>
+  </contents>
+
+  <dependencies>
+    <required>
+      <php>
+        <min>4.0.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.0a1</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+
+  <providesextension>nanotime</providesextension>
+
+  <extsrcrelease/>
+
+</package>
