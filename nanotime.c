@@ -60,11 +60,11 @@ PHP_FUNCTION(nanotime_time)
 	long double ts;
 
 	if (zend_parse_parameters_none()) {
-		php_error_docref(NULL TSRMLS_CC, E_WARNING, "Could not retrieve current system nanosecond");
 		RETURN_NULL();
 	}
 
 	if (NANO_UNEXPECTED(nano_time(&ts))) {
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, "Could not retrieve current system nanosecond");
 		RETURN_NULL();
 	}
 
