@@ -9,6 +9,7 @@ before_script:
     - sudo apt-get install -y check
     - git clone https://github.com/lstrojny/nanotime.git
     - cd nanotime && ./autogen.sh && make && sudo make install && cd -
+    - ls -l /usr/local/lib
     - phpize
     - ./configure --with-libnanotime-prefix=/usr/local
     - make
