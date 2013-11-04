@@ -5,6 +5,9 @@ php:
     - 5.4
     - 5.5
 
+env:
+  - NO_INTERACTION=1
+
 before_script:
     - sudo apt-get install -y check
     - git clone https://github.com/lstrojny/nanotime.git
