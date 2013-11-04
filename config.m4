@@ -14,7 +14,7 @@ if test "$PHP_NANOTIME" != "no"; then
     AC_DEFINE(HAVE_NANOTIME, 1 ,[Whether you want nanotime support])
     PHP_SUBST(NANOTIME_SHARED_LIBADD)
     PHP_ADD_INCLUDE($PHP_LIBNANOTIME_PREFIX/include/libnanotime-1.0.0)
-    PHP_ADD_LIBRARY(nanotime-1.0.0, , NANOTIME_SHARED_LIBADD)
+    PHP_ADD_LIBRARY_WITH_PATH(nanotime-1.0.0, PHP_LIBNANOTIME_PREFIX/lib, NANOTIME_SHARED_LIBADD)
 
     PHP_NEW_EXTENSION(nanotime, nanotime.c, $ext_shared)
     CFLAGS="$CFLAGS -Wall -g -O0 -pedantic"
