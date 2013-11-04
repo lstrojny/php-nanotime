@@ -6,9 +6,8 @@ php:
     - 5.5
 
 before_script:
-    - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - sudo apt-get install -y check
-    - git clone git@github.com:lstrojny/nanotime.git
+    - git clone https://github.com/lstrojny/nanotime.git
     - cd nanotime && ./autogen.sh && make && make install
     - phpize
     - ./configure --with-libnanotime-prefix=/usr/local
