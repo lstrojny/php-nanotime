@@ -1,4 +1,4 @@
-php-nanotime [![Build Status](https://secure.travis-ci.org/lstrojny/php-nanotime.png)](http://travis-ci.org/lstrojny/php-nanotime)
+php-nanotime [![Build Status](https://secure.travis-ci.org/lstrojny/php-nanotime.svg)](http://travis-ci.org/lstrojny/php-nanotime)
 ============
 
 PHP bindings for libnanotime for nanosecond precision timestamps
